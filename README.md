@@ -2,22 +2,22 @@
 Uma API RESTful desenvolvida com FastAPI, que permite o cadastro, listagem, atualização e exclusão de veículos. Conta com autenticação via API Key, persistência com SQLite + SQLAlchemy, além de estar dockerizada, documentada via Swagger, e com testes automatizados com Pytest.
 
 ✅ Tecnologias Utilizadas
-Python 3.8+
+- Python 3.8+
 
-FastAPI
+- FastAPI
 
-SQLAlchemy (com SQLite)
+- SQLAlchemy (com SQLite)
 
-Uvicorn
+- Uvicorn
 
-Docker + Docker Compose
+- Docker + Docker Compose
 
-Pytest
+- Pytest
 
 # Autenticação
 A API exige autenticação via API Key. Envie a chave no cabeçalho das requisições:
 
-```python
+```bash
 X-API-Key: 123456
 ```
 
@@ -51,19 +51,19 @@ limit: número máximo de registros a retornar (default: 10)
 
 # 🛠️ Como executar o projeto localmente
 
-## 1. Clonar o repositório
+### 1. Clonar o repositório
 ```bash
 git clone <url-do-seu-repositório>
 cd nome-do-projeto
 ```
 
-## 2. Criar ambiente virtual e instalar dependências
+### 2. Criar ambiente virtual e instalar dependências
 ```bash
 python -m venv api_carros_env
 .\api_carros_env\Scripts\activate
 pip install -r requirements.txt
 ```
-## 3. Rodar o servidor FastAPI
+### 3. Rodar o servidor FastAPI
 ```bash
 cd src
 uvicorn main:app --reload
@@ -73,7 +73,7 @@ Acesse a documentação interativa em:
 
 # 🐳 Executando com Docker
 
-## 1 Subindo o projeto com Docker Compose
+### 1 Subindo o projeto com Docker Compose
 ```bash
 docker-compose up --build
 ```
@@ -85,7 +85,7 @@ Swagger (documentação): http://localhost:8000/docs
 # Rodando os Testes Automatizados (Pytest)
 ⚠️ Atenção: O arquivo test_veiculos.py está totalmente comentado com aspas triplas (""") para evitar conflitos durante a execução normal da API.
 
-## Para rodar os testes:
+### Para rodar os testes:
 1 Remova as aspas triplas (""") do início e fim do arquivo test_veiculos.py para que os testes sejam executados.
 
 2 Execute o comando:
