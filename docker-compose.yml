@@ -1,0 +1,15 @@
+version: "3.9"
+
+services: # Definição dos serviços do Docker Compose
+  api: # Serviço da API FastAPI
+    build: .                      # Usa o Dockerfile na raiz do projeto
+    container_name: api-fastapi # Nome do container
+    ports:
+      - "8000:8000"               # Expondo a API para acesso externo
+    volumes:
+      - ./src/data:/app/src/data # Persistência do banco SQLite
+    environment:
+      - PYTHONUNBUFFERED=1     # Desabilita o buffer de saída do Python
+      - PYTHONPATH=/app/src       # Faz o Python reconhecer seus módulos
+    command: > # Comando para iniciar a aplicação FastAPI
+      uvicorn main:app --host 0.0.0.0 --reload
