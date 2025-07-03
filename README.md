@@ -73,7 +73,7 @@ Acesse a documentação interativa em:
 
 # 🐳 Executando com Docker
 
-### 1 Subindo o projeto com Docker Compose
+### 1. Subindo o projeto com Docker Compose
 ```bash
 docker-compose up --build
 ```
@@ -86,14 +86,14 @@ Swagger (documentação): http://localhost:8000/docs
 ⚠️ Atenção: O arquivo test_veiculos.py está totalmente comentado com aspas triplas (""") para evitar conflitos durante a execução normal da API.
 
 ### Para rodar os testes:
-1 Remova as aspas triplas (""") do início e fim do arquivo test_veiculos.py para que os testes sejam executados.
+1. Remova as aspas triplas (""") do início e fim do arquivo test_veiculos.py para que os testes sejam executados.
 
-2 Execute o comando:
+2. Execute o comando:
 ```bash
 pytest
 ```
 
-3 Após os testes, adicione novamente as aspas triplas para evitar erros ao subir a API com o uvicorn.
+3. Após os testes, adicione novamente as aspas triplas para evitar erros ao subir a API com o uvicorn.
 
 # Estrutura dos dados
 ```json
