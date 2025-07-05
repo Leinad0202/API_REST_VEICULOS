@@ -75,7 +75,7 @@ Acesse a documentação interativa em:
 
 ### 1. Subindo o projeto com Docker Compose
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 A aplicação será exposta em:
 
