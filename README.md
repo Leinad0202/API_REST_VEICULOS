@@ -1,3 +1,5 @@
+![API REST Veiculos](assets/api_rest_veiculos.png)
+
 #  API REST - Cadastro de Veículos
 Uma API RESTful desenvolvida com FastAPI, que permite o cadastro, listagem, atualização e exclusão de veículos. Conta com autenticação via API Key, persistência com SQLite + SQLAlchemy, além de estar dockerizada, documentada via Swagger, e com testes automatizados com Pytest.
 
